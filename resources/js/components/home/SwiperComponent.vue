@@ -12,8 +12,8 @@
                     <a href="#cursuri" class="img-cursuri"><img  :src="images[2]" style="background-position: center; " alt=""></a>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+<!--            <div class="swiper-button-next"></div>-->
+<!--            <div class="swiper-button-prev"></div>-->
             <div class="swiper-pagination"></div>
         </div>
     </div>

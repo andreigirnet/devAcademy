@@ -26,16 +26,17 @@
                         </div>
                     </div>
                 <div>
-                    <div class="font-extrabold text-2xl text-course-title" style="color: #e8630a;">JUNIOR WEB-DESIGNER (14-18/ani)</div>
-                    <div class="font-extrabold text-2xl text-course durata" >DURATA: 12 ORE</div>
-                    <div class="mt-4">
-                        <div class=" course-content">
-                            <div class="font-semibold text-xl text-course" >HTML - Hyper Text Markup Language</div>
-                            <div class="font-semibold text-xl text-course" >CSS - Cascading Style Sheets</div>
-                            <div class="font-semibold text-xl text-course" >JS - Programming language of the Web</div>
+                    <div class="course-card-content">
+                        <div class="font-extrabold text-2xl text-course-title" style="color: #e8630a;">JUNIOR WEB-DESIGNER (14-18/ani)</div>
+                        <div class="font-extrabold text-2xl text-course durata" >DURATA: 14 ORE</div>
+                        <div class="mt-4">
+                            <div class=" course-content">
+                                <div class="font-semibold text-xl text-course" >HTML - Hyper Text Markup Language</div>
+                                <div class="font-semibold text-xl text-course" >CSS - Cascading Style Sheets</div>
+                                <div class="font-semibold text-xl text-course" >JS - Programming language of the Web</div>
+                            </div>
+                            <a href="#contact"><button  class="border border-2 mt-12 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl contact-button-curs " style="">Rezervă Acum!</button></a>
                         </div>
-                        <a href="#contact"><button  class="border border-2 mt-12 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl contact-button-curs " style="">Rezervă Acum!</button></a>
-
                     </div>
                 </div>
                 <img style="" class="curs-img" :src="images['card-img1']" alt="">
@@ -59,17 +60,18 @@
                     </div>
                 </div>
                 <div>
-                    <div class="font-extrabold text-2xl text-course-title" style=" color: #e8630a;">SENIOR WEB-DESIGNER (18/ani+)</div>
-                    <div class="font-extrabold text-2xl text-course durata" style="">DURATA: 30 ORE</div>
-                    <div class="mt-4 ">
-                        <div class="course-content">
-                            <div class="font-semibold text-xl text-course" style="">HTML - Hyper Text Markup Language</div>
-                            <div class="font-semibold text-xl text-course" style="">CSS - Cascading Style Sheets</div>
-                            <div class="font-semibold text-xl text-course" style="">JS - Programming language of the Web</div>
-                            <div class="font-semibold text-xl text-course" style="">PHP - Hypertext Preprocessor</div>
-                            <div class="font-semibold text-xl text-course" style="">FRAMEWORKS - Laravel/VueJs</div>
+                    <div class="course-card-content">
+                        <div class="font-extrabold text-2xl text-course-title" id="second-course-title" style=" color: #e8630a;">SENIOR WEB-DESIGNER (18/ani+)</div>
+                        <div class="font-extrabold text-2xl text-course durata" style="">DURATA: 30 ORE</div>
+                        <div class="mt-4 ">
+                            <div class="course-content">
+                                <div class="font-semibold text-xl text-course" style="">HTML/CSS</div>
+                                <div class="font-semibold text-xl text-course" style="">JS - Web Programing Language</div>
+                                <div class="font-semibold text-xl text-course" style="">PHP - Hypertext Preprocessor</div>
+                                <div class="font-semibold text-xl text-course" style="">FRAMEWORKS - Laravel/VueJs</div>
+                            </div>
+                            <a href="#contact"><button id="second-rezerva"  class="border border-2 mt-12 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl contact-button-curs" style="">Rezervă Acum!</button></a>
                         </div>
-                        <a href="#contact"><button  class="border border-2 mt-12 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl contact-button-curs" style="">Rezervă Acum!</button></a>
                     </div>
                 </div>
                 <img class="curs-img" :src="images['card-img2']" alt="">
@@ -236,5 +238,18 @@ export default{
        font-size: 5px;
        margin: 0px 10px 0px 10px;
     }
+    .text-course-title{
+        font-size: 25px;
+    }
+    #second-course-title{
+        margin-top: 25px;
+    }
+    .course-card-content{
+        padding: 0 10px 0 10px;
+    }
+    #second-rezerva{
+        padding-bottom: 10px;
+    }
+
 }
 </style>

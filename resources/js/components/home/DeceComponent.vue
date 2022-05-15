@@ -12,7 +12,7 @@
 
             <div class="card-dece">
                 <a href="#contact"  style=" text-decoration: none; color: #1a1e21">
-                <div class="flex justify-center mt-2"><img :src="images['promotion']" class="w-28" alt=""></div>
+                <div class="flex justify-center mt-2 "><img :src="images['promotion']" class="w-28 img-avantaj" alt=""></div>
                 <div style="color:#e86305;" class="text-center font-extrabold text-lg mt-4 text-uppercase">Carieră IT</div>
                 <div class="text-center font-semibold mt-2 px-2">Unul din cele mai cerute Job-uri de pe piață</div>
                 <div class="flex justify-center pt-2"><button class="text-uppercase border border-xl px-4 font-extrabold rounded-xl">Înscrie-te acum</button></div>
@@ -21,7 +21,7 @@
 
             <div class="card-dece">
                 <a href="#contact" style=" text-decoration: none;     color: #1a1e21;">
-                <div class="flex justify-center mt-2"><img :src="images['vacations']" class="w-28" alt=""></div>
+                <div class="flex justify-center mt-2"><img :src="images['vacations']" class="w-28 img-avantaj" alt=""></div>
                 <div style="color:#e86305;" class="text-center font-extrabold text-lg mt-4 text-uppercase">Lucru Remote</div>
                 <div class="text-center font-semibold mt-2 px-2">Joburile în IT iți permit să lucrezi de unde dorești</div>
                 <div class="flex justify-center pt-2"><button class="text-uppercase border border-xl px-4 font-extrabold rounded-xl">Înscrie-te acum</button></div>
@@ -29,7 +29,7 @@
             </div>
             <div class="card-dece">
                 <a href="#contact" style=" text-decoration: none;color: #1a1e21; ">
-                <div class="flex justify-center mt-2"><img :src="images['money-bag']" class="w-28" alt=""></div>
+                <div class="flex justify-center mt-2 "><img :src="images['money-bag']" class="w-28 img-avantaj" alt=""></div>
                 <div style="color:#e86305;" class="text-center font-extrabold text-lg mt-4 text-uppercase">Salarii bune</div>
                 <div class="text-center font-semibold mt-2 px-2">Unul din cele mai platite Job-uri de pe piață</div>
                 <div class="flex justify-center pt-2"><button class="text-uppercase border border-xl px-4 font-extrabold rounded-xl">Înscrie-te acum</button></div>
@@ -37,7 +37,7 @@
             </div>
             <div class="card-dece" >
                 <a href="#contact" style=" text-decoration: none;color: #1a1e21;">
-                <div class="flex justify-center mt-2"><img :src="images['clock']" class="w-28" alt=""></div>
+                <div class="flex justify-center mt-2 "><img :src="images['clock']" class="w-28 img-avantaj" alt=""></div>
                 <div style="color:#e86305;" class="text-center font-extrabold text-lg mt-4 text-uppercase">Program Flexibil</div>
                 <div class="text-center font-semibold mt-2 px-2">Tu decizi orele în care vrei să lucrezi</div>
                 <div class="flex justify-center pt-2"><button class="text-uppercase border border-xl px-4 font-extrabold rounded-xl">Înscrie-te acum</button></div>
@@ -122,6 +122,9 @@ export default {
     }
     .container{
         display: block;
+    }
+    .img-avantaj{
+        margin-top: 20px;
     }
 }
 </style>

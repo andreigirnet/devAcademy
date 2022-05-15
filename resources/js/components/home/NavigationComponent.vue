@@ -1,7 +1,7 @@
 <template>
     <div class="w-full h-12">
         <div style="color:#035397;" class="flex h-20 items-center justify-between nav">
-            <div class="flex items-center pl-10 font-extrabold text-xl cursor-pointer">
+            <div class="flex items-center pl-10 font-extrabold text-xl cursor-pointer" id="logo-m">
                 <div class="flex" style="font-size: 2rem">
                     <div>/</div><div class="blinking">.</div>
                     <div class="ml-8">Dev-academy</div>
@@ -126,6 +126,9 @@ a{
     }
     .pr{
         padding-right:0;
+    }
+    #logo-m{
+        margin-top: 20px;
     }
 }
 </style>

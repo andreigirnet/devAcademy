@@ -3,7 +3,7 @@
         <div class="w-full h-52 bg-gray-200 footer-wrap">
             <div style="width: 80%;" class="mx-auto">
                 <div class="grid grid-cols-4 font-semibold text-gray-500 footer">
-                    <div class="mt-12 " >
+                    <div class="mt-12 programe-disponibile" >
                         <div class=" text-center text-uppercase font-bold">Programe Disponibile:</div>
                         <div class="text-center">Program Juniori Web-Design</div>
                         <div class="text-center">Program Senior Full-Stack <br> Web Developer</div>
@@ -30,13 +30,13 @@
                         <a href="https://www.facebook.com/DevAcademyro">
                         <div class="flex items-center justify-center">
                             <div class="w-4"><img :src="images['facebook']" alt=""></div>
-                            <div class="text-center">Facebook</div>
+                            <div class="text-center ml-2">Facebook</div>
                         </div>
                         </a>
                         <a href="https://www.instagram.com/devacademyro/">
                             <div class="flex items-center justify-center">
                                 <div class="w-4"><img :src="images['instagram']" alt=""></div>
-                                <div class="text-center">Instagram</div>
+                                <div class="text-center ml-2">Instagram</div>
                             </div>
                         </a>
                     </div>
@@ -65,12 +65,16 @@ export default{
         display: block;
         text-align: center;
         margin: auto auto auto auto;
+        padding-top: 20px;
     }
     .footer-wrap{
         height: 500px;
     }
     .center-text{
         margin-left: 0;
+    }
+    .programe-disponibile{
+        margin-top: 20px;
     }
 }
 </style>

@@ -50,9 +50,12 @@ export default {
     @media only screen and (max-width: 600px) {
         .museum{
             right: 0;
+            width: 100px;
+            height: 100px;
+            display: none;
         }
         .museum-f{
-            right: 0;
+            display: none;
         }
         #slash{
             display: none;

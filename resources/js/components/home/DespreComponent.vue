@@ -8,7 +8,7 @@
                 <h1 style="color: #3E4D72;" class="mt-12 mx-auto" id="heading-programe">Despre Noi</h1>
             </div>
         </div>
-        <div  class="w-full flex justify-center mt-12">
+        <div class="w-full flex justify-center mt-12 despre-container">
             <div id="mobile-despre" style="width: 80%" class="grid grid-cols-4 gap-20">
             <div class="card rounded-xl cursor-pointer center">
                 <a href="#contact" style="color: #1a1e21;">
@@ -91,6 +91,9 @@ export default{
     }
     .center{
         margin: 50px auto auto auto;
+    }
+    .despre-container{
+        margin-top: 5px;
     }
 }
 </style>

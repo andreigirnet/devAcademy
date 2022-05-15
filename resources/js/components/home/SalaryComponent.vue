@@ -8,7 +8,7 @@
                 <h1 style="color: #035397" class="mt-12 mx-auto" id="heading-programe">Veniturile Web-developerilor</h1>
             </div>
         </div>
-        <div class="w-full flex justify-center">
+        <div class="w-full flex justify-center graph">
             <div class="w-full" id="salary-container">
                 <div class="flex justify-center" style="position: relative">
                     <div id="salary-1" style="" class=" font-bold text-3xl">65.000$/AN</div>
@@ -49,7 +49,7 @@ export default {
 #heading-programe{
     color: #111 ;
     font-family: 'Lato',
-    sans-serif; 
+    sans-serif;
     font-size: 54px;
     font-weight: 600;
     line-height: 58px;
@@ -70,40 +70,40 @@ export default {
     transform: rotate(-3deg);
 }
 #salary-1{
-    position: absolute; 
-    color:#0CAA41;  
-    top: 319px; 
+    position: absolute;
+    color:#0CAA41;
+    top: 319px;
     left: 165px
 }
 #salary-2{
-    position: absolute; 
-    color:#0CAA41; 
-    top: 161px; 
+    position: absolute;
+    color:#0CAA41;
+    top: 161px;
     left: 699px
 }
 #an-2012{
- position: absolute; 
- top: 473px; 
+ position: absolute;
+ top: 473px;
  left: 206px
 }
 #an-2022{
-    position: absolute; 
-    top: 473px; 
+    position: absolute;
+    top: 473px;
     left: 739px
 }
 #glass{
-    position: absolute; 
-    left: -50px; 
+    position: absolute;
+    left: -50px;
     opacity: 0.7
 }
 #growth{
-    width: 800px; 
+    width: 800px;
     height: 500px;
 }
 
 @media only screen and (max-width: 600px) {
     #growth{
-    width: 800px; 
+    width: 800px;
     height: 397px;
     }
     #heading-programe{
@@ -111,23 +111,23 @@ export default {
 
     }
     #salary-1{
-       top: 256px; 
+       top: 256px;
         left: -27px;
         font-size: 17px;
     }
     #salary-2{
     font-size: 17px;
-    top: 131px; 
+    top: 131px;
     left: 157px;
 }
     #an-2012{
-    font-size: 20px;    
-    top: 384px; 
+    font-size: 20px;
+    top: 384px;
     left: -1px
     }
     #an-2022{
-    font-size: 20px;    
-    top: 384px; 
+    font-size: 20px;
+    top: 384px;
     left: 174px
     }
     #glassdor-img{
@@ -139,7 +139,9 @@ export default {
     #glass-check{
         width: 30px;
     }
-
+    .graph{
+        margin-top: 50px;
+    }
 
 }
 </style>
