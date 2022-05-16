@@ -94,7 +94,8 @@ export default {
 #glass{
     position: absolute;
     left: -50px;
-    opacity: 0.7
+    opacity: 0.7;
+    top:-20px;
 }
 #growth{
     width: 800px;

@@ -39,7 +39,7 @@ export default {
     .museum-f{
         position: absolute;
         z-index: -1;
-        right:-1000px;
+        right:-960px;
         top: -2500px;
         width: 800px;
         height: 400px;
@@ -61,6 +61,5 @@ export default {
             display: none;
 
         }
-
     }
 </style>
