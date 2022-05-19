@@ -21,7 +21,7 @@
                         </div>
                         <div class="flex items-center justify-center">
                             <div class="w-4"><img :src="images['gmail']" alt=""></div>
-                            <div class="text-center ml-2">develop.academyro@gmail.com</div>
+                            <div class="text-center ml-2">info@dev-academy.ro</div>
                         </div>
                     </div>
 
@@ -59,7 +59,7 @@ export default{
     }
 }
 </script>
-<style>
+<style scoped>
 @media only screen and (max-width: 600px) {
     .footer{
         display: block;

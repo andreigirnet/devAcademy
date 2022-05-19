@@ -59,7 +59,7 @@
                 </div>
                 <div class="w-full ">
                     <div class="w-full relative">
-                        <button v-on:click="saveData()" class="shadow h-12 bg-blue-400 hover:bg-blue-600 w-full hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                        <button v-on:click="saveData()" :disabled="isLoading"  class="shadow h-12 bg-blue-400 hover:bg-blue-600 w-full hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
                             Trimite
                         </button>
                         <div v-if="successMessage.length"  class="shadow relative h-12 bg-green-400 hover:bg-green-600 w-full focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded flex items-center justify-center mt-4">
@@ -97,11 +97,13 @@ export default {
             images:{
                 'cancel': 'photos/courseIcons/cancel.png',
             },
+            isLoading: null
 
         }
     },
     methods: {
         saveData() {
+
             if (this.errors=[]){
                 if(!this.contacts.first_name){
                     this.errors.push('Completează spațiul cu prenumele tău')
@@ -125,9 +127,14 @@ export default {
             }
                 axios.post('api/contact', this.contacts).then(function (response) {
                 })
+                this.isLoading = true
+                setTimeout(() => {
+                    this.isLoading = false
+                }, 1000)
+                if (this.successMessage = []){
                  if (!this.errors.length){
-                this.successMessage.push('Mesajul tău a fost primit, te vom contacta cît mai curînd')
-
+                    this.successMessage.push('Mesajul tău a fost primit, te vom contacta cît mai curînd')
+                 }
             }
 
 
@@ -140,7 +147,14 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
+    #heading-programe{
+        color: #111 ;
+        font-family: 'Lato',
+        sans-serif; font-size: 54px;
+        font-weight: 600;
+        line-height: 58px;
+    }
 @media only screen and (max-width: 600px) {
     form{
         padding:20px;

@@ -25,25 +25,16 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'a913f2bb2d9fb89c8a8d28295c448934758b4484',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
   array (
-    'arrilot/laravel-widgets' => 
-    array (
-      'pretty_version' => '3.13.1',
-      'version' => '3.13.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'ae0e44ce625026ae71c6ab9259f89f13af227e37',
-    ),
     'brick/math' => 
     array (
       'pretty_version' => '0.9.3',
@@ -75,42 +66,6 @@ private static $installed = array (
       array (
       ),
       'reference' => '0992cc19268b259a39e86f296da5f0677841f42c',
-    ),
-    'doctrine/cache' => 
-    array (
-      'pretty_version' => '2.1.1',
-      'version' => '2.1.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '331b4d5dbaeab3827976273e9356b3b453c300ce',
-    ),
-    'doctrine/dbal' => 
-    array (
-      'pretty_version' => '2.13.8',
-      'version' => '2.13.8.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'dc9b3c3c8592c935a6e590441f9abc0f9eba335b',
-    ),
-    'doctrine/deprecations' => 
-    array (
-      'pretty_version' => 'v0.5.3',
-      'version' => '0.5.3.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '9504165960a1f83cc1480e2be1dd0a0478561314',
-    ),
-    'doctrine/event-manager' => 
-    array (
-      'pretty_version' => '1.1.1',
-      'version' => '1.1.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '41370af6a30faa9dc0368c4a6814d596e81aba7f',
     ),
     'doctrine/inflector' => 
     array (
@@ -462,30 +417,12 @@ private static $installed = array (
         0 => 'v9.4.1',
       ),
     ),
-    'intervention/image' => 
-    array (
-      'pretty_version' => '2.7.1',
-      'version' => '2.7.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '744ebba495319501b873a4e48787759c72e3fb8c',
-    ),
     'kodova/hamcrest-php' => 
     array (
       'replaced' => 
       array (
         0 => '*',
       ),
-    ),
-    'larapack/doctrine-support' => 
-    array (
-      'pretty_version' => 'v0.1.9',
-      'version' => '0.1.9.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'ab6e821c467704ae91a9a944e6ebdaad6a99a294',
     ),
     'laravel/framework' => 
     array (
@@ -498,12 +435,12 @@ private static $installed = array (
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'a913f2bb2d9fb89c8a8d28295c448934758b4484',
     ),
     'laravel/sail' => 
     array (
@@ -1365,15 +1302,6 @@ private static $installed = array (
       array (
       ),
       'reference' => '38358405ae948963c50a3aae3dfea598223ba15e',
-    ),
-    'tcg/voyager' => 
-    array (
-      'pretty_version' => '1.6.x-dev',
-      'version' => '1.6.9999999.9999999-dev',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '10fe579d57f1b09d64c9dd6e7f8e0bb2e801d58d',
     ),
     'theseer/tokenizer' => 
     array (

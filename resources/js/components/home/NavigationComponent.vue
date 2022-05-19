@@ -42,7 +42,7 @@
     }
 
 </script>
-<style>
+<style scoped>
 .active, .item:hover {
     color: #E8630A;
 }

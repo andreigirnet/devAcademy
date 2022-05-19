@@ -72,7 +72,14 @@ export default{
     }
 }
 </script>
-<style>
+<style scoped>
+#heading-programe{
+    color: #111 ;
+    font-family: 'Lato',
+    sans-serif; font-size: 54px;
+    font-weight: 600;
+    line-height: 58px;
+}
 .card {
     width: 250px;
     height: 300px;

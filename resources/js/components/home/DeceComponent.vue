@@ -63,7 +63,7 @@ export default {
     }
 };
 </script>
-<style>
+<style scoped>
 
 #heading-programe-dece{
     color: #111 ;

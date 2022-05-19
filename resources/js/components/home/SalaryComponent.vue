@@ -45,7 +45,7 @@ export default {
     }
 };
 </script>
-<style>
+<style scoped>
 #heading-programe{
     color: #111 ;
     font-family: 'Lato',

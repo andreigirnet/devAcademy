@@ -19,7 +19,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
     #logo_back{
         position: absolute;
         bottom: -4000px;

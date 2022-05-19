@@ -15,10 +15,16 @@ use App\Http\Controllers\FormController;
 */
 
 Route::get('/', function () {
+    return view('layouts.mainapp');
+});
+Route::get('/admin', function () {
     return view('layouts.app');
 });
 
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
+
+Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
+Route::get('/home/edit/{contact}', [App\Http\Controllers\HomeController::class, 'edit'])->name('edit')->middleware('auth');
+Route::patch('/home/update/{contact}', [App\Http\Controllers\HomeController::class, 'update'])->name('update')->middleware('auth');
+Route::delete('/home/delete/{contact}', [App\Http\Controllers\HomeController::class, 'delete'])->name('delete')->middleware('auth');
