@@ -73,13 +73,13 @@ export default {
     position: absolute;
     color:#0CAA41;
     top: 319px;
-    left: 165px
+    left: 108px
 }
 #salary-2{
     position: absolute;
     color:#0CAA41;
     top: 161px;
-    left: 699px
+    left: 633px;
 }
 #an-2012{
  position: absolute;
