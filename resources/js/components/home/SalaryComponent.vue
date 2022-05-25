@@ -108,8 +108,8 @@ export default {
     height: 397px;
     }
     #heading-programe{
-        font-size: 26px;
-
+        font-size: 30px;
+        font-weight: 700;
     }
     #salary-1{
        top: 256px;

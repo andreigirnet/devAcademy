@@ -1,7 +1,7 @@
 <template>
     <div>
         <div id="logo_back" class="flex" style="font-size: 40rem">
-            <div id="slash">/</div><div class="blinking">.</div>
+            <div id="slash">/</div><div class="blink_me">.</div>
             <img :src="images['british-m']" class="museum" alt="">
             <img :src="images['british-f']" class="museum-f" alt="">
         </div>

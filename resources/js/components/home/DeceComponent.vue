@@ -5,7 +5,7 @@
         </div>
         <div class="w-full flex justify-center">
             <div class="mx-auto">
-                <h1 style="color: #3E4D72" class="mt-12 mx-auto" id="heading-programe-dece">AVANTAJELE ACESTUI CURS:</h1>
+                <h1 style="color: #035397" class="mt-12 mx-auto" id="heading-programe-dece">AVANTAJELE ACESTUI CURS:</h1>
             </div>
         </div>
         <div class="container mt-12">
@@ -113,7 +113,8 @@ export default {
 }
 @media only screen and (max-width: 600px) {
     #heading-programe-dece{
-        font-size: 22px;
+        font-size: 28px;
+        font-weight: 700;
     }
     .card-dece{
         transform: none;

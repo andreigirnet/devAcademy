@@ -35,7 +35,7 @@
                                 <div class="font-semibold text-xl text-course" >CSS - Cascading Style Sheets</div>
                                 <div class="font-semibold text-xl text-course" >JS - Programming language of the Web</div>
                             </div>
-                            <div class="button-rezerva">
+                            <div class="button-rezerva w-full flex justify-center">
                                 <a href="#contact"><button  class="border border-2 mt-12 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl" style="">Rezervă Acum!</button></a>
                             </div>
                         </div>
@@ -70,9 +70,9 @@
                                 <div class="font-semibold text-xl text-course" style="">HTML/CSS</div>
                                 <div class="font-semibold text-xl text-course" style="">JS - Web Programing Language</div>
                                 <div class="font-semibold text-xl text-course" style="">PHP - Hypertext Preprocessor</div>
-                                <div class="font-semibold text-xl text-course" style="">FRAMEWORKS - Laravel/VueJs</div>
+                                <div class="font-semibold text-xl text-course" style="">MYSQL - Database</div>
                             </div>
-                            <div class="button-rezerva">
+                            <div class="button-rezerva w-full flex justify-center">
                             <a href="#contact"><button id="second-rezerva"  class="border border-2 mt-12 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl" style="">Rezervă Acum!</button></a>
                             </div>
                         </div>
@@ -209,7 +209,8 @@ export default{
 
 @media only screen and (max-width: 600px) {
     #heading-programe{
-        font-size: 26px;
+        font-size: 30px;
+        font-weight: 700;
     }
     .swiperTwo{
         display: none;

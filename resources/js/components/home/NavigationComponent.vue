@@ -3,7 +3,7 @@
         <div style="color:#035397;" class="flex h-20 items-center justify-between nav">
             <div class="flex items-center pl-10 font-extrabold text-xl cursor-pointer" id="logo-m">
                 <div class="flex" style="font-size: 2rem">
-                    <div>/</div><div class="blinking">.</div>
+                    <div>/</div><div class="blink_me">.</div>
                     <div class="ml-8">Dev-academy</div>
                 </div>
                 <div class="pl-2"></div>

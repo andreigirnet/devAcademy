@@ -5,7 +5,7 @@
         </div>
         <div class="w-full flex justify-center">
             <div class="mx-auto">
-                <h1 style="color: #3E4D72;" class="mt-12 mx-auto" id="heading-programe">Despre Noi</h1>
+                <h1 style="color: #035397;" class="mt-12 mx-auto" id="heading-programe">Despre Noi</h1>
             </div>
         </div>
         <div class="w-full flex justify-center mt-12 despre-container">
@@ -91,7 +91,8 @@ export default{
 }
 @media only screen and (max-width: 600px) {
     #heading-programe{
-        font-size: 22px;
+        font-size: 30px;
+        font-weight: 700;
     }
     #mobile-despre{
         display: block;
