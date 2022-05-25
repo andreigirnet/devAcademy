@@ -113,7 +113,7 @@ export default {
 }
 @media only screen and (max-width: 600px) {
     #heading-programe-dece{
-        font-size: 28px;
+        font-size: 25px;
         font-weight: 700;
     }
     .card-dece{

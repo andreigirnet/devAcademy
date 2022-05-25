@@ -209,7 +209,7 @@ export default{
 
 @media only screen and (max-width: 600px) {
     #heading-programe{
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 700;
     }
     .swiperTwo{
