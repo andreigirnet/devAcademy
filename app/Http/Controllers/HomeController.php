@@ -25,12 +25,12 @@ class HomeController extends Controller
     public function index()
     {
         $contacts = Contact::latest()->get();
-        return view('home')->with('contacts', $contacts);
+        return view('admin.mesaje.index')->with('contacts', $contacts);
     }
     public function edit(Contact $contact)
     {
         $contact = Contact::find($contact->id);
-        return view('admin.edit')->with('contact',$contact);
+        return view('admin.mesaje.edit')->with('contact',$contact);
     }
     public function update(Request $request, Contact $contact)
     {

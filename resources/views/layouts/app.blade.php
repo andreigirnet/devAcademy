@@ -46,11 +46,11 @@
                                 </li>
                             @endif
 
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
+{{--                            @if (Route::has('register'))--}}
+{{--                                <li class="nav-item">--}}
+{{--                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>--}}
+{{--                                </li>--}}
+{{--                            @endif--}}
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -77,17 +77,33 @@
 
         <main class="">
             <div class="wrap admin ">
+
+                @if(Auth::check())
                 <div id="dash-nav">
                     <nav>
-                        <a href="">
                             <div id="nav">
-                                <div class="nav-item">Mesaje</div>
+                                <a href="{{route('home.index')}}"><div class="nav-item" >Mesaje</div></a>
                             </div>
-                        </a>
+                            <div id="nav">
+                                <a href="{{route('course.index')}}"><div class="nav-item" >Cursuri disponibile</div></a>
+                            </div>
+                            <div id="nav">
+                                <a href="{{route('group.index')}}"><div class="nav-item" >Grupe</div></a>
+                            </div>
+                            <div id="nav">
+                                <a href="{{route('student.index')}}"><div class="nav-item" >Studenti</div></a>
+                            </div>
+
                     </nav>
                 </div>
-                <div style="width: 100%">
-                    @yield('content')
+                @endif
+                <div style="width: 100%;">
+                    @if(session()->has('success'))
+                        <div class="alert alert-success">
+                            {{ session()->get('success') }}
+                        </div>
+                    @endif
+                        @yield('content')
                 </div>
             </div>
         </main>
