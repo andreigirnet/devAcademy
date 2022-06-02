@@ -32,7 +32,7 @@ export default {
         DespreComponent,
         ContactHome,
         FooterComponent,
-        LogoComponent
+        LogoComponent,
     },
     data(){
         return{

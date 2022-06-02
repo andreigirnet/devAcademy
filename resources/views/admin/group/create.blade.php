@@ -25,7 +25,7 @@
                 <input type="text" class="form-input" name="name" value="" required>
             </div>
             <div>
-                <label for="program">Payment Status</label>
+                <label for="program">Cursul</label>
                 <select class="form-input" name="course_id" id="" required>
                     @foreach($courses as $course)
                         <option value="{{$course->id}}">{{$course->name}}</option>

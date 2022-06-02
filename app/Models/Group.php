@@ -15,6 +15,9 @@ class Group extends Model
     public function students(){
         return $this->hasMany(Student::Class);
     }
+    public function teachers(){
+        return $this->hasMany(Teacher::Class);
+    }
     public function course(){
         return $this->belongsTo(Course::Class);
     }

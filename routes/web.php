@@ -23,7 +23,7 @@ Route::get('/admin', function () {
 
 
 
-Auth::routes(['register' => false]);
+Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home.index')->middleware('auth');
 Route::get('/home/edit/{contact}', [App\Http\Controllers\HomeController::class, 'edit'])->name('edit')->middleware('auth');
 Route::patch('/home/update/{contact}', [App\Http\Controllers\HomeController::class, 'update'])->name('update')->middleware('auth');
@@ -51,3 +51,11 @@ Route::get('/student/edit/{student}', [App\Http\Controllers\StudentController::c
 Route::get('/student/show/{student}', [App\Http\Controllers\StudentController::class, 'show'])->name('student.show')->middleware('auth');
 Route::patch('/student/update/{student}', [App\Http\Controllers\StudentController::class, 'update'])->name('student.update')->middleware('auth');
 Route::delete('/student/delete/{student}', [App\Http\Controllers\StudentController::class, 'destroy'])->name('student.delete')->middleware('auth');
+
+Route::get('/teacher', [App\Http\Controllers\TeacherController::class, 'index'])->name('teacher.index')->middleware('auth');
+Route::get('/teacher/create', [App\Http\Controllers\TeacherController::class, 'create'])->name('teacher.create')->middleware('auth');
+Route::post('/teacher/store', [App\Http\Controllers\TeacherController::class, 'store'])->name('teacher.store')->middleware('auth');
+Route::get('/teacher/edit/{teacher}', [App\Http\Controllers\TeacherController::class, 'edit'])->name('teacher.edit')->middleware('auth');
+Route::get('/teacher/show/{teacher}', [App\Http\Controllers\TeacherController::class, 'show'])->name('teacher.show')->middleware('auth');
+Route::patch('/teacher/update/{teacher}', [App\Http\Controllers\TeacherController::class, 'update'])->name('teacher.update')->middleware('auth');
+Route::delete('/teacher/delete/{teacher}', [App\Http\Controllers\TeacherController::class, 'destroy'])->name('teacher.delete')->middleware('auth');

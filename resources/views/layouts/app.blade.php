@@ -93,6 +93,9 @@
                             <div id="nav">
                                 <a href="{{route('student.index')}}"><div class="nav-item" >Studenti</div></a>
                             </div>
+                        <div id="nav">
+                            <a href="{{route('teacher.index')}}"><div class="nav-item" >Profesori</div></a>
+                        </div>
 
                     </nav>
                 </div>

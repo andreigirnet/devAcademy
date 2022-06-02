@@ -7,6 +7,7 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Course Name</th>
+                    <th scope="col">Course Price</th>
                     <th scope="col">Actions</th>
                 </tr>
                 </thead>
@@ -15,6 +16,7 @@
                     <tr>
                         <th scope="row">{{$course->id}}</th>
                         <td>{{$course->name}}</td>
+                        <td>{{$course->price}}</td>
                         <td>
                             <div style="display: flex">
                                 <a href="{{route('course.create')}}"><img style="width: 30px" src="/photos/courseIcons/create.png" alt=""></a>

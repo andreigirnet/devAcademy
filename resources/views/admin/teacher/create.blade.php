@@ -18,20 +18,33 @@
 </style>
 <div id="form-design" style="display: flex; justify-content: center; margin-top: 100px">
     <div style="width: 30%">
-        <form  action="{{route('course.store')}}" method="POST">
+        <form  action="{{route('teacher.store')}}" method="POST">
             @csrf
             <div>
-                <label for="last_name">Numele Cursului</label>
+                <label for="last_name">Numele Profesorului</label>
                 <input type="text" class="form-input" name="name" value="" required>
             </div>
             <div>
-                <label for="last_name">Pretul Cursului</label>
-                <input type="number" class="form-input" name="price" value="" required>
+                <label for="last_name">Email</label>
+                <input type="text" class="form-input" name="email" value="" required>
             </div>
             <div>
-                <label for="last_name">Descriere Cursului</label>
-                <textarea name="description" id="" cols="30" rows="10"></textarea>
+                <label for="last_name">Specializare</label>
+                <input type="text" class="form-input" name="specialization" value="" required>
             </div>
+            <div>
+                <label for="last_name">Phone</label>
+                <input type="text" class="form-input" name="phone" value="" required>
+            </div>
+            <div>
+                <label for="program">Group for student</label>
+                <select class="form-input" name="group_id" id="" required>
+                    @foreach($groups as $group)
+                        <option value="{{$group->id}}">{{$group->name}}</option>
+                    @endforeach
+                </select>
+            </div>
+
             <div style="width: 500px; display: flex; justify-content: center; margin-top: 20px">
                 <button class="button-edit" type="submit">Submit</button>
             </div>

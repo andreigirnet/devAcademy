@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Course;
+use App\Models\Group;
+use App\Models\Teacher;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class CourseController extends Controller
+class TeacherController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +16,8 @@ class CourseController extends Controller
      */
     public function index()
     {
-        $courses = Course::latest()->get();
-        return view('admin.course.index')->with('courses',$courses);
+        $teachers = Teacher::latest()->get();
+        return view('admin.teacher.index')->with('teachers', $teachers);
     }
 
     /**
@@ -26,7 +27,8 @@ class CourseController extends Controller
      */
     public function create()
     {
-        return view('admin.course.create');
+        $groups = Group::all();
+        return view('admin.teacher.create')->with('groups', $groups);
     }
 
     /**
@@ -37,21 +39,23 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        Course::create([
-           'name'=> $request->name,
-            'description'=>$request->description,
-            'price'=>$request->price
+        Teacher::create([
+           'name'=>$request->name,
+           'email'=>$request->email,
+           'specialization'=>$request->specialization,
+            'group_id'=>$request->group_id,
+            'phone'=>$request->phone
         ]);
-        return redirect(route('course.index'))->with('success','Record saved');
+        return redirect(route('teacher.index'))->with('success','Teacher created');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Course  $course
+     * @param  \App\Models\Teacher  $teacher
      * @return \Illuminate\Http\Response
      */
-    public function show(Course $course)
+    public function show(Teacher $teacher)
     {
         //
     }
@@ -59,42 +63,45 @@ class CourseController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Course  $course
+     * @param  \App\Models\Teacher  $teacher
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function edit(Course $course)
+    public function edit(Teacher $teacher)
     {
-        return view('admin.course.edit')->with('course',$course);
+        $groups = Group::all();
+        return view('admin.teacher.edit')->with('groups',$groups)->with('teacher', $teacher);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Course  $course
+     * @param  \App\Models\Teacher  $teacher
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update(Request $request, Course $course)
+    public function update(Request $request, Teacher $teacher)
     {
-        $course = Course::find($course->id);
-        $course->update([
+        $teacher = Teacher::find($teacher->id);
+        $teacher->update([
             'name'=>$request->name,
-            'description'=>$request->description,
-            'price'=>$request->price
+            'email'=>$request->email,
+            'specialization'=>$request->specialization,
+            'group_id'=>$request->group_id,
+            'phone'=>$request->phone
         ]);
-        return redirect(route('course.index'))->with('success','Record updated');
+        return redirect(route('teacher.index'))->with('success','Teacher updated');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Course  $course
+     * @param  \App\Models\Teacher  $teacher
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function destroy(Course $course)
+    public function destroy(Teacher $teacher)
     {
-        $course = Course::find($course->id);
-        $course->delete();
-        return redirect(route('course.index'))->with('success','Record deleted');
+        $teacher = Teacher::find($teacher->id);
+        $teacher->delete();
+        return redirect(route('teacher.index'))->with('success','Teacher deleted');
     }
 }
