@@ -4,7 +4,7 @@
         <SwiperComponent></SwiperComponent>
         <CourseComponent></CourseComponent>
         <Dece></Dece>
-        <Salary></Salary>
+        <instruction></instruction>
         <DespreComponent></DespreComponent>
         <ContactHome></ContactHome>
         <FooterComponent></FooterComponent>
@@ -17,7 +17,7 @@ import NavigationComponent from "./NavigationComponent";
 import SwiperComponent from "./SwiperComponent";
 import CourseComponent from "./CourseComponent";
 import Dece from "./DeceComponent";
-import Salary from "./SalaryComponent";
+import instruction from "./HowItWorksComponent";
 import DespreComponent from "./DespreComponent";
 import ContactHome from "./ContactHomeComponent";
 import FooterComponent from "./FooterComponent";
@@ -28,11 +28,11 @@ export default {
         SwiperComponent,
         CourseComponent,
         Dece,
-        Salary,
         DespreComponent,
         ContactHome,
         FooterComponent,
         LogoComponent,
+        instruction
     },
     data(){
         return{

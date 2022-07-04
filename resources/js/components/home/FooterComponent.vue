@@ -25,7 +25,7 @@
                         </div>
                     </div>
 
-                    <div class="mt-12 ml-12 center-text">
+                    <div class="mt-12 ml-12 center-text sm-body">
                         <div class=" text-center text-uppercase font-bold">Social Media</div>
                         <a href="https://www.facebook.com/DevAcademyro">
                         <div class="flex items-center justify-center">
@@ -37,6 +37,12 @@
                             <div class="flex items-center justify-center">
                                 <div class="w-4"><img :src="images['instagram']" alt=""></div>
                                 <div class="text-center ml-2">Instagram</div>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCGdm25-EE2yvR-eaoXCCc1w">
+                            <div class="flex items-center justify-center">
+                                <div class="w-4"><img :src="images['youtube']" alt=""></div>
+                                <div class="text-center ml-2">Youtube</div>
                             </div>
                         </a>
                     </div>
@@ -53,13 +59,19 @@ export default{
                 'whats-up': 'photos/sm/whatsapp.png',
                 'gmail': 'photos/sm/gmail.png',
                 'facebook': 'photos/sm/facebook.png',
-                'instagram': 'photos/sm/instagram.png'
+                'instagram': 'photos/sm/instagram.png',
+                'youtube': 'photos/sm/youtube.png'
             }
         }
     }
 }
 </script>
 <style scoped>
+.sm-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 @media only screen and (max-width: 600px) {
     .footer{
         display: block;

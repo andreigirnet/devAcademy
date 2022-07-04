@@ -20,7 +20,8 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('home', require('./components/home/Home.vue').default);
-
+import AOS from 'aos';
+import "aos/dist/aos.css"
 
 
 /**
@@ -30,6 +31,9 @@ Vue.component('home', require('./components/home/Home.vue').default);
  */
 
 const app = new Vue({
+    created(){
+        AOS.init()
+    },
     el: '#app',
 });
 

@@ -45,7 +45,7 @@ class StudentController extends Controller
             'email'=>$request->email,
             'phone'=>$request->phone,
             'age'=>$request->age,
-            'payment_status'=>$request->payment_status,
+            'payment-status'=>$request->payment_status,
             'completed'=>$request->completed,
             'group_id'=>$request->group_id
         ]);
@@ -91,7 +91,7 @@ class StudentController extends Controller
             'email'=>$request->email,
             'phone'=>$request->phone,
             'age'=>$request->age,
-            'payment_status'=>$request->payment_status,
+            'payment-status'=>$request->payment_status,
             'completed'=>$request->completed,
             'group_id'=>$request->group_id
         ]);

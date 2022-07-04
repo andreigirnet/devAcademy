@@ -11,6 +11,9 @@
                 <div class="swiper-slide">
                     <a href="#cursuri" class="img-cursuri"><img  :src="images[2]" style="background-position: center; " alt=""></a>
                 </div>
+                <div class="swiper-slide">
+                    <a href="#cursuri" class="img-cursuri"><img  :src="images[3]" style="background-position: center; " alt=""></a>
+                </div>
             </div>
 <!--            <div class="swiper-button-next"></div>-->
 <!--            <div class="swiper-button-prev"></div>-->
@@ -28,6 +31,7 @@ export default {
                 'photos/banner/2.png',
                 'photos/banner/1.png',
                 'photos/banner/3.png',
+                'photos/banner/4.png',
             ],
         }
     }

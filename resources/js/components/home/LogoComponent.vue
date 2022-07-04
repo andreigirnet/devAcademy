@@ -2,8 +2,6 @@
     <div>
         <div id="logo_back" class="flex" style="font-size: 40rem">
             <div id="slash">/</div><div class="blink_me">.</div>
-            <img :src="images['british-m']" class="museum" alt="">
-            <img :src="images['british-f']" class="museum-f" alt="">
         </div>
     </div>
 </template>
@@ -22,7 +20,7 @@ export default {
 <style scoped>
     #logo_back{
         position: absolute;
-        bottom: -4000px;
+        bottom: -5100px;
         left: 100px;
         z-index: -1;
         color:#035397;
@@ -31,7 +29,7 @@ export default {
         position: absolute;
         z-index: -1;
         right:10px;
-        top: -800px;
+        top: -350px;
         width: 700px;
         height: 500px;
         opacity: 0.1;
@@ -40,7 +38,7 @@ export default {
         position: absolute;
         z-index: -1;
         right:-960px;
-        top: -2500px;
+        top: -2900px;
         width: 800px;
         height: 400px;
         opacity: 0.1;
@@ -60,6 +58,9 @@ export default {
         #slash{
             display: none;
 
+        }
+        .blink_me{
+            display: none;
         }
     }
 </style>
