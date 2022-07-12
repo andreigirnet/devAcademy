@@ -15,8 +15,8 @@
 <script>
 import NavigationComponent from "./NavigationComponent";
 import SwiperComponent from "./SwiperComponent";
-import CourseComponent from "./CourseComponent";
 import Dece from "./DeceComponent";
+import CourseComponent from "./NewCourseComponent";
 import instruction from "./HowItWorksComponent";
 import DespreComponent from "./DespreComponent";
 import ContactHome from "./ContactHomeComponent";
@@ -26,21 +26,30 @@ export default {
     components: {
         NavigationComponent,
         SwiperComponent,
-        CourseComponent,
         Dece,
         DespreComponent,
         ContactHome,
         FooterComponent,
         LogoComponent,
-        instruction
+        instruction,
+        CourseComponent,
     },
     data(){
         return{
 
         }
+    },
+    methods:{
+
     }
 };
 </script>
 <style>
-
+#heading-programe-dece{
+    color: #111 ;
+    font-family: 'Lato',
+    sans-serif; font-size: 54px;
+    font-weight: 600;
+    line-height: 58px;
+}
 </style>

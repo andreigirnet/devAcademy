@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::resource('contact',FormController::class);
+Route::get('/courses',[App\Http\Controllers\CourseController::class,'getCourses']);

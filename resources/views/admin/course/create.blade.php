@@ -25,12 +25,20 @@
                 <input type="text" class="form-input" name="name" value="" required>
             </div>
             <div>
+                <label for="last_name">Stack</label>
+                <input type="text" class="form-input" name="stack" value="" required>
+            </div>
+            <div>
+                <label for="last_name">Durata</label>
+                <input type="text" class="form-input" name="durata" value="" required>
+            </div>
+            <div>
                 <label for="last_name">Pretul Cursului</label>
                 <input type="number" class="form-input" name="price" value="" required>
             </div>
             <div>
                 <label for="last_name">Descriere Cursului</label>
-                <textarea name="description" id="" cols="30" rows="10"></textarea>
+                <textarea name="description" id="" cols="65" rows="10"></textarea>
             </div>
             <div style="width: 500px; display: flex; justify-content: center; margin-top: 20px">
                 <button class="button-edit" type="submit">Submit</button>

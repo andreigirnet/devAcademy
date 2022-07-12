@@ -13,6 +13,11 @@ class CourseController extends Controller
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
+    public function getCourses(){
+        return Course::inRandomOrder()
+            ->limit(4)
+            ->get();
+    }
     public function index()
     {
         $courses = Course::latest()->get();
@@ -39,6 +44,8 @@ class CourseController extends Controller
     {
         Course::create([
            'name'=> $request->name,
+            'stack'=> $request->stack,
+            'durata'=> $request->durata,
             'description'=>$request->description,
             'price'=>$request->price
         ]);

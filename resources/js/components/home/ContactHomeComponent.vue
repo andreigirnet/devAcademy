@@ -27,7 +27,7 @@
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                             E-mail
                         </label>
                         <input v-model="contacts.email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" required>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                             Telefon De Contact
                         </label>
                         <input v-model="contacts.telephone" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="telephone" id="telephone" type="text" required>
@@ -46,12 +46,15 @@
                 </label>
 
                 <select name="program" required v-model="contacts.program" id="cars" class="w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 font-semibold text-gray-400">
-                    <option value="Program Juniori Web-designer 14-18 ani">Program Juniori Web-designer 14-18 ani</option>
-                    <option value="Program Senior Web Developer 18+ ani">Program Senior Web Developer 18+ ani</option>
+                    <option value="FRONT END - BEGINNER">FRONT END - BEGINNER</option>
+                    <option value="FRONT END - ADVANCED">FRONT END - ADVANCED</option>
+                    <option value="LARAVEL PHP">LARAVEL PHP</option>
+                    <option value="FULL STACK WEB DEV">FULL STACK WEB DEV</option>
+                    <option value="PHP COURSE">PHP COURSE</option>
                 </select>
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                             Mesaj
                         </label>
                         <textarea  v-model="contacts.message" class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
@@ -82,6 +85,7 @@
     </div>
 </template>
 <script>
+import axios from 'axios';
 export default {
     data(){
         return{
@@ -137,13 +141,13 @@ export default {
                  }
             }
 
-
             // if (contacts.first_name){
             //     this.successMessage= 'Mesajul dumneavoastra a fost primit'
             // }else{
             //     this.successMessage = '';
             // }
-        }
+        },
+
     }
 }
 </script>

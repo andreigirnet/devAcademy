@@ -11,6 +11,8 @@ class Course extends Model
     protected $fillable=[
         'name',
         'group_id',
+        'stack',
+        'durata',
         'price',
         'description'
     ];

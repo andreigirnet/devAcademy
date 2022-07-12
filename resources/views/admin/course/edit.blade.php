@@ -26,12 +26,20 @@
                 <input class="form-input" type="text" name="name" value="{{$course->name}}" required>
             </div>
             <div>
+                <label for="last_name">Stack</label>
+                <input type="text" class="form-input" name="stack" value="{{$course->stack}}" required>
+            </div>
+            <div>
+                <label for="last_name">Durata</label>
+                <input type="text" class="form-input" name="durata" value="{{$course->durata}}" required>
+            </div>
+            <div>
                 <label for="last_name">Pretul Cursului</label>
                 <input type="number" class="form-input" name="price" value="{{$course->price}}" required>
             </div>
             <div>
                 <label for="last_name">Descriere Cursului</label>
-                <textarea name="description" id="" cols="30" rows="10">{{$course->description}}</textarea>
+                <textarea name="description" id="" cols="65" rows="10">{{$course->description}}</textarea>
             </div>
             <div style="width: 500px; display: flex; justify-content: center; margin-top:20px">
                 <button class="button-edit" type="submit">Submit</button>

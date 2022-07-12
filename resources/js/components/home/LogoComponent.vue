@@ -1,8 +1,6 @@
 <template>
     <div>
-        <div id="logo_back" class="flex" style="font-size: 40rem">
-            <div id="slash">/</div><div class="blink_me">.</div>
-        </div>
+
     </div>
 </template>
 <script>
